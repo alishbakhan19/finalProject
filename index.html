@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+         
+        <div id="nav2">
+        <ul id="navbar" class="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="page2.html">Shop</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+           <div class="cart-icon">
+              <a href="#" id="cartButton">Cart (<span id="cartCount">0</span>)</a>
+          </div>
+    <div class="searchbar"><input type="text" placeholder="search for products..." id="searchBar"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+          
+        </ul>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    
+    </header>
+    <div id="sideCart"> 
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-summary">
+          <p>Total: $<span id="cartTotal">0.00</span></p>
+          <button id="viewCart">View Full Cart</button>
+        <button id="checkout">Checkout</button>
+      </div>
+  </div>
+    <main>
+    
+        <section class="hero">
+            <h1>New Winter Collection Is Out Now!</h1>
+            <p>Redefine your style</p>
+            <button class="cta-btn">Shop Now</button>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your orders delivered to your doorstep in no time.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                    <h3>24/7 Support</h3>
+                    <p>We are here to assist you anytime, anywhere.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                    <h3>Easy Returns</h3>
+                    <p>Hassle-free returns for all your purchases.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa fa-shield" aria-hidden="true"></i>
+                    <h3>Secure Payment</h3>
+                    <p>Your transactions are safe and encrypted.</p>
+                </div>
+            </div>
+        </section>
+        
+            
+    <section class="categories">
+    <h2 style=" text-align: center; margin-top: 30px; color: #333333da;">Shop by categories</h2>
+    <div class="category-cards">
+        <div class="category-card" id="men">
+           <img src="images/menmodel.jpg" alt="man">
+           <h3>Shop men</h3>
+        </div>
+        <div class="category-card" id="women">
+          <img src="images/women.jpg" alt="woman">
+          <h3>Shop women</h3>
+        </div>
+        <div class="category-card" id="kids">
+           <img src="images/kid.jpg" alt="kid">
+           <h3>Shop kids</h3>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-carousel-wrapper">
+            <button class="carousel-btn prev">&lt;</button>
+            <div class="product-carousel">
+    
+
+                <div class="product-card">
+                    <img src="images/leather jacket.jpg" alt="Black Leather Jacket">
+                    <h3 class="product-name">Black Leather Jacket</h3>
+                    <p class="product-price">150</p>
+                    <button>View Details</button>
+                    <button> Add to cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/designer dress.jpg" alt="Black and Gold Cocktail Dress">
+                    <h3 class="product-name">Black & Gold Cocktail Dress</h3>
+                    <p class="product-price">120</p>
+                    <button>View Details</button>
+                    <button> Add to cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/handbag.jpg" alt="Maroon Shiny Handbag">
+                    <h3 class="product-name">Maroon Shiny Handbag</h3>
+                    <p class="product-price">80</p>
+                    <button>View Details</button>
+                    <button> Add to cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/oversized green sweater.jpg" alt="Oversized Green Sweater">
+                    <h3 class="product-name">Oversized Green Sweater</h3>
+                    <p class="product-price">60</p>
+                    <button>View Details</button>
+                    <button> Add to cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/boots.jpg" alt="Black Boots">
+                    <h3 class="product-name">Black Boots</h3>
+                    <p class="product-price">90</p>
+                    <button>View Details</button>
+                    <button> Add to cart</button>
+                </div>
+            </div>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+    </section>
+    </main>
+    <div style="background-image: url('images/b2.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 250px; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  <h3 style="font-size: 1.8rem; margin-bottom: 10px;">Sign Up for Newsletter</h3>
+  <p style="font-size: 1rem; margin-bottom: 20px; max-width: 500px;">Get E-mail updates about our latest shop and special offers</p>
+  <form style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; max-width: 600px;">
+    <input type="email" 
+           placeholder="Enter your email" 
+           style="flex: 1; 
+                  min-width: 250px; 
+                  padding: 10px; 
+                  border: 2px solid #fff; 
+                  border-radius: 5px; 
+                  font-size: 1rem; 
+                  color: #333; 
+                  outline: none;">
+    <button type="submit" 
+            style="padding: 10px 20px; 
+                   background-color: #ff6347; 
+                   color: #fff; 
+                   font-size: 1rem; 
+                   border: none; 
+                   border-radius: 5px; 
+                   cursor: pointer; 
+                   transition: background-color 0.3s;">
+      Subscribe
+    </button>
+  </form>
+</div>
+
+<!-- Footer Section -->
+<footer style="background-color: white; color: #494545; padding: 30px 0; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+      <!-- Newsletter Signup -->
+      
+  
+      <!-- Footer Links and Info -->
+      <div style=" margin-top: 30px;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+  
+        <!-- Logo and Address -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3 style="margin-bottom: 10px;"><img src="logo.png" alt="Cara"></h3>
+          <p>Address: 562 Wellington Road, Street 32, San Francisco</p>
+          <p>Phone: +01 2222 3665 / (+91) 01 2345 6763</p>
+          <p>Hours: 10:00 - 18:00, Mon - Sat</p>
+        </div>
+  
+        <!-- Follow Us -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3>Follow Us</h3>
+          <div style="display: flex; gap: 10px; ">
+            <ul style="list-style: none;">
+            <li><a href="#" style="color: #494545; text-decoration: none;">Facebook</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Instagram</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Pinterest</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- About -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3>About</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="#" style="color: #494545; text-decoration: none;">About Us</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Delivery Information</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Privacy Policy</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Terms & Condition</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- My Account -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3>My Account</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="#" style="color: #494545; text-decoration: none;">Sign In</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">View Cart</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">My Wishlist</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Track My Order</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Help</a></li>
+          </ul>
+        </div>
+  
+        <!-- Install App -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3 style="text-align: center;">Install App</h3>
+      
+          <div style="display: flex;">
+            <img src="images/app.jpg" alt="App Store" style="width: 200px;">
+            <img src="images/play.jpg" alt="Google Play" style="width: 200px;">
+          </div>
+        </div>
+  
+        <!-- Secured Payment Gateways -->
+        <div style="flex: 1; min-width: 200px;"> 
+          <h3>Secured Payment Gateways</h3>
+          <div style="display: flex; gap: 10px;">
+            <img src="images/visa_16183667.png" alt="Visa" style="width: 50px;">
+            <img src="images/paypal_888870.png" alt="PayPal" style="width: 50px;">
+            <img src="images/google-pay_6124998.png" alt="Google Pay" style="width: 50px;">
+            <img src="images/logo_14082959.png" alt="MasterCard" style="width: 50px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    
+
+   <script src="app.js"></script>
+</body>
+</html>

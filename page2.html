@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+         
+        <div id="nav2">
+        <ul id="navbar" class="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="page2.html" >Shop</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <div class="cart-icon">
+                <a href="#" id="cartButton">Cart (<span id="cartCount">0</span>)</a>
+            </div>
+            <div class="searchbar"><input type="text" placeholder="search for products..." id="searchBar"><i class="fa fa-search" aria-hidden="true"></i></div>
+            
+        </ul>
+
+        
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    </header>
+
+    <div id="sideCart"> 
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-summary">
+            <p>Total: $<span id="cartTotal">0.00</span></p>
+            <button id="viewCart">View Full Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    
+    <main>
+    <section class="products">
+        <div class="product-card">
+            <img src="images/jacket.jpg" alt="">
+            <h3 class="product-name">winter special leather jacket</h3>
+            <p class="product-price">700</p>
+            <button> Add to cart</button>
+        </div> 
+        <div class="product-card">
+            <img src="f1.jpg" alt="">
+            <h3 class="product-name">Casual Printed Shirt</h3>
+            <p class="product-price">500</p>
+            <button> Add to cart</button>
+        </div> 
+
+        <div class="product-card">
+            <img src="images/ring.jpg" alt="">
+            <h3 class="product-name">crystal ring</h3>
+            <p class="product-price">200</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="f2.jpg" alt="">
+            <h3 class="product-name">Floral Shirt</h3>
+            <p class="product-price">550</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/f8.jpg" alt="">
+            <h3 class="product-name">Grey Top</h3>
+            <p class="product-price">899</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="n3.jpg" alt="">
+            <h3 class="product-name">Simple White Shirt</h3>
+            <p class="product-price">700</p>
+            <button> Add to cart</button>
+        </div>
+
+
+        <div class="product-card">
+            <img src="f6.jpg" alt="">
+            <h3 class="product-name">Stylish Shirt</h3>
+            <p class="product-price">800</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/sunglasses.jpg" alt="">
+            <h3 class="product-name">fancy sunglasses</h3>
+            <p class="product-price">300</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="n6.jpg" alt="">
+            <h3 class="product-name">Short Pants</h3>
+            <p class="product-price">699</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/jeans.jpg" alt="">
+            <h3 class="product-name">jeans pant</h3>
+            <p class="product-price">599</p>
+            <button> Add to cart</button>
+        </div> 
+
+        <div class="product-card">
+            <img src="images/t-shirt png.jpg" alt="">
+            <h3 class="product-name">graphic tees</h3>
+            <p class="product-price">409</p>
+            <button> Add to cart</button>
+        </div> 
+
+        <div class="product-card">
+            <img src="images/cute white winter sweater.jpg" alt="">
+            <h3 class="product-name">white sweater</h3>
+            <p class="product-price">899</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/gloves.jpg" alt="">
+            <h3 class="product-name">hand gloves</h3>
+            <p class="product-price">300</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pink simple elegant dress.jpg" alt="">
+            <h3class="product-name">elegant pink dress</h3>
+            <p class="product-price">799</p>
+            <button> Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/simple brown dress.jpg" alt="">
+            <h3 class="product-name">brown dress</h3>
+            <p class="product-price">660</p>
+            <button> Add to cart</button>
+        </div>
+        
+
+    </section>
+</main>
+<div style="background-image: url('images/b2.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 250px; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  <h3 style="font-size: 1.8rem; margin-bottom: 10px;">Sign Up for Newsletter</h3>
+  <p style="font-size: 1rem; margin-bottom: 20px; max-width: 500px;">Get E-mail updates about our latest shop and special offers</p>
+  <form style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; max-width: 600px;">
+    <input type="email" 
+           placeholder="Enter your email" 
+           style="flex: 1; 
+                  min-width: 250px; 
+                  padding: 10px; 
+                  border: 2px solid #fff; 
+                  border-radius: 5px; 
+                  font-size: 1rem; 
+                  color: #333; 
+                  outline: none;">
+    <button type="submit" 
+            style="padding: 10px 20px; 
+                   background-color: #ff6347; 
+                   color: #fff; 
+                   font-size: 1rem; 
+                   border: none; 
+                   border-radius: 5px; 
+                   cursor: pointer; 
+                   transition: background-color 0.3s;">
+      Subscribe
+    </button>
+  </form>
+</div>
+
+<!-- Footer Section -->
+<footer style="background-color: white; color: #494545; padding: 30px 0; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+      <!-- Newsletter Signup -->
+      
+  
+      <!-- Footer Links and Info -->
+      <div style=" margin-top: 30px;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+  
+        <!-- Logo and Address -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3 style="margin-bottom: 10px;"><img src="logo.png" alt="Cara"></h3>
+          <p>Address: 562 Wellington Road, Street 32, San Francisco</p>
+          <p>Phone: +01 2222 3665 / (+91) 01 2345 6763</p>
+          <p>Hours: 10:00 - 18:00, Mon - Sat</p>
+        </div>
+  
+        <!-- Follow Us -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3>Follow Us</h3>
+          <div style="display: flex; gap: 10px; ">
+            <ul style="list-style: none;">
+            <li><a href="#" style="color: #494545; text-decoration: none;">Facebook</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Instagram</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Pinterest</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- About -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3>About</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="#" style="color: #494545; text-decoration: none;">About Us</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Delivery Information</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Privacy Policy</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Terms & Condition</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- My Account -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3>My Account</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="#" style="color: #494545; text-decoration: none;">Sign In</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">View Cart</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">My Wishlist</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Track My Order</a></li>
+            <li><a href="#" style="color: #494545; text-decoration: none;">Help</a></li>
+          </ul>
+        </div>
+  
+        <!-- Install App -->
+        <div style="flex: 1; min-width: 200px;">
+          <h3 style="text-align: center;">Install App</h3>
+      
+          <div style="display: flex;">
+            <img src="images/app.jpg" alt="App Store" style="width: 200px;">
+            <img src="images/play.jpg" alt="Google Play" style="width: 200px;">
+          </div>
+        </div>
+  
+        <!-- Secured Payment Gateways -->
+        <div style="flex: 1; min-width: 200px;"> 
+          <h3>Secured Payment Gateways</h3>
+          <div style="display: flex; gap: 10px;">
+            <img src="images/visa_16183667.png" alt="Visa" style="width: 50px;">
+            <img src="images/paypal_888870.png" alt="PayPal" style="width: 50px;">
+            <img src="images/google-pay_6124998.png" alt="Google Pay" style="width: 50px;">
+            <img src="images/logo_14082959.png" alt="MasterCard" style="width: 50px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+   let cartItems = []; // Empty array to hold cart items
+   
+
+    document.querySelectorAll('.product-card button').forEach(button => {
+        button.addEventListener('click', (event) => {
+            // Get product details
+            const productCard = event.target.closest('.product-card');
+            const productName = productCard.querySelector('.product-name').textContent;
+            const productPrice = parseFloat(productCard.querySelector('.product-price').textContent);
+
+            // Add product to cart
+            cartItems.push({ name: productName, price: productPrice });
+
+            // Update cart count
+            const cartCount = cartItems.length;
+            document.querySelector('#cartCount').textContent = cartCount;
+
+            // Optional: Log cart items for testing
+            console.log(cartItems);
+        });
+    });
+    const cartButton = document.getElementById("cartButton");
+    const sideCart = document.getElementById("sideCart");
+    const cartItemsContainer = document.getElementById("cartItems");
+    const cartTotalElement = document.getElementById("cartTotal");
+    const cartCountElement = document.getElementById("cartCount");
+
+   
+
+    // Function to calculate the total price
+    function calculateTotal() {
+        const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+        cartTotalElement.textContent = total.toFixed(2);
+    }
+
+    // Function to update cart count
+    function updateCartCount() {
+        cartCountElement.textContent = cartItems.length;
+    }
+
+    // Function to render cart items
+    function renderCartItems() {
+        cartItemsContainer.innerHTML = ""; // Clear current items
+        cartItems.forEach(item => {
+            const itemElement = document.createElement("div");
+            itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            cartItemsContainer.appendChild(itemElement);
+        });
+    }
+
+    // Toggle side cart visibility
+    cartButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        if (sideCart.style.right === "0px") {
+            sideCart.style.right = "-100%";
+        } else {
+            renderCartItems();
+            calculateTotal();
+            updateCartCount();
+            sideCart.style.right = "0";
+        }
+    });
+
+    // Initialize the cart display
+    updateCartCount();
+    calculateTotal();
+});
+
+
+    </script>
+</body>
+</html>
